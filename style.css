@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+.page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.qr-container {
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.qr-image {
+  max-width: 288px;
+  width: 100%;
+  border-radius: 10px;
+}
+.textimonials {
+  max-width: 288px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.textimonials h2 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #1f314f;
+}
+
+.textimonials p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1875px;
+  color: #7d889e;
+}
+
+@media screen and (max-width: 280px) {
+  .qr-container {
+    max-width: 250px;
+  }
+  .textimonials h2 {
+    font-size: 18px;
+  }
+  .textimonials p {
+    font-size: 13px;
+  }
+}
